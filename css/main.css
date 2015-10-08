@@ -1,1 +1,210 @@
-/* Your stylesheet goes here */
+/* IMPORTS */
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,400,300);
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+/* GENERAL STYLES */
+
+	body {
+		font-family: "Lato", "Helvetica Neue", "Helvetica" sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+		background-color: #E9EAEE;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "Raleway", "Helvetica Neue", "Helvetica" sans-serif;
+	}
+
+	h2 {
+		color: #BC6026;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	dt {
+		font-weight: bold;
+	}
+
+	dd {
+		font-style: italic;
+		padding-left: 1em;
+	}
+
+	.icon {
+		height: 1em;
+	}
+
+/* NAVIGATION BAR */
+
+	nav {
+		position: fixed;
+		background-color: #181C22;
+		font-size: 16px;
+		padding-left: 15px;
+		width: 100%;
+	}
+
+	nav li {
+		display: inline;
+		font-variant: small-caps;
+	}
+
+	nav a {
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		color: white;
+	}
+
+	nav a:hover {
+		text-decoration: none;
+		color: #D87E28;
+	}
+
+/* HEADER */
+
+	#header {
+		padding-top: 3em;
+	}
+
+	#header p {
+		visibility: hidden;
+	}
+
+/* HEADLINE SECTION */
+
+	#headline {
+		font-style: italic;
+	}
+
+	#headline .icon {
+		visibility: hidden;
+	}
+
+/* CAFE INFORMATION */
+
+	#cafe-info{
+		text-align: center;
+		background-color: #dbdce3;
+	}
+
+	#map {
+		border-radius: 5px;
+	}
+
+	#cafe-info .icon {
+		margin: 1em 1em 1em 1em;
+	}
+
+	#cafe-info i {
+		margin-right: 5px;
+	}
+
+/* CAFE MENU */
+
+	#cafe-menu {
+		background-color: #dbdce3;
+	}
+
+	#cafe-menu h2 {
+		text-align: center;
+		color: #D87E28;
+	}
+
+/* OUR STORY */
+
+	#our-story img {
+		float: right;
+		max-height: 300px;
+		margin-left: 1em;
+		border-radius: 5px;
+		background-color: #dbdce3;
+	}
+
+/* FOOTER */
+
+	#footer {
+		border-top: 3px solid #D87E28;
+		background-color: #afb3c2;
+		font-size: 12px;
+		padding: 1em 1em 1em 1em;
+		clear: both;
+	}
+
+/* FOR SCREENS LARGER THAN 767px */
+
+	@media screen and (min-width: 768px) {
+		body {
+			font-size: 20px;
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 1em;
+		}
+
+		nav {
+			background-color: rgba(24, 28, 34, 0.8);
+		}
+
+		nav a {
+			padding: 0.5em 1em 0.5em 1em;
+		}
+
+		#header {
+			background-image: url("../img/background-sm.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			text-align: right;
+			color: white;
+			min-height: 550px;
+		}
+
+		#header p {
+			visibility: visible;
+		}
+
+		#headline {
+			font-size: 1.25em;
+			text-align: center;
+			margin: 3em 0 3em 0;
+		}
+
+		#headline .icon {
+			visibility: visible;
+			height: 1.5em;
+			margin-bottom: 1em;
+		}
+
+		#our-story img {
+			max-height: 400px;
+		}
+
+		#footer #attribution {
+			text-align: right;
+		}
+	}
+
+/* FOR SCREENS LARGER THAN 991px */
+
+	@media screen and (min-width: 992px) {
+		#header {
+			background-image: url("../img/background-md.jpg");
+		}
+
+		h1 {
+			font-size: 4em;
+		}
+
+	}
+
+/* FOR SCREENS LARGER THAN 1999px */
+
+	@media screen and (min-width: 1200px) {
+		#header {
+			background-image: url("../img/background-lg.jpg");
+		}
+	}
+}
