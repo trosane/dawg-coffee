@@ -7,14 +7,14 @@
 /* GENERAL STYLES */
 
 	body {
-		font-family: "Lato", "Helvetica Neue", "Helvetica" sans-serif;
+		font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
 		font-size: 16px;
 		font-weight: 300;
 		background-color: #E9EAEE;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Raleway", "Helvetica Neue", "Helvetica" sans-serif;
+		font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
 	}
 
 	h2 {
@@ -34,8 +34,9 @@
 		padding-left: 1em;
 	}
 
-	.icon {
+	svg {
 		height: 1em;
+		fill: #BC6026;
 	}
 
 /* NAVIGATION BAR */
@@ -44,8 +45,8 @@
 		position: fixed;
 		background-color: #181C22;
 		font-size: 16px;
-		padding-left: 15px;
 		width: 100%;
+		z-index: 2;
 	}
 
 	nav li {
@@ -61,6 +62,10 @@
 	nav a:hover {
 		text-decoration: none;
 		color: #D87E28;
+	}
+
+	nav svg {
+		margin-left: 15px;
 	}
 
 /* HEADER */
@@ -79,7 +84,7 @@
 		font-style: italic;
 	}
 
-	#headline .icon {
+	#headline svg {
 		visibility: hidden;
 	}
 
@@ -94,7 +99,7 @@
 		border-radius: 5px;
 	}
 
-	#cafe-info .icon {
+	#cafe-info svg {
 		margin: 1em 1em 1em 1em;
 	}
 
@@ -115,12 +120,15 @@
 
 /* OUR STORY */
 
+	#our-story {
+		background-color: #dbdce3;
+	}
+
 	#our-story img {
 		float: right;
 		max-height: 300px;
 		margin-left: 1em;
 		border-radius: 5px;
-		background-color: #dbdce3;
 	}
 
 /* FOOTER */
@@ -172,7 +180,7 @@
 			margin: 3em 0 3em 0;
 		}
 
-		#headline .icon {
+		#headline svg {
 			visibility: visible;
 			height: 1.5em;
 			margin-bottom: 1em;
